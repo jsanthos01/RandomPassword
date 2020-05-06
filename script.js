@@ -47,6 +47,10 @@ function generatePassword() {
     }
 
 
-    
+    var finalString = "";
+    for (var i = 0; i < passwordLength.value; i++){
+        finalString = finalString + workingString.charAt(Math.floor(Math.random() * workingString.length));
+    }
+    passwordText.value = finalString;
 
 }
